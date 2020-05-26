@@ -26,5 +26,5 @@ using namespace std;
 
 #define KEYLENGTH  0x00800000
 #define ENCRYPT_BLOCK_SIZE 20 
-	int encrypt();
-    int decrypt();
+	//int encrypt();
+    //int decrypt();
