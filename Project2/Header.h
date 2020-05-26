@@ -13,7 +13,8 @@
 #include <fstream>
 #include <tchar.h>
 #include <conio.h>
-	using namespace std;
+
+using namespace std;
 
 #define MY_TYPE  (PKCS_7_ASN_ENCODING | X509_ASN_ENCODING)
 
