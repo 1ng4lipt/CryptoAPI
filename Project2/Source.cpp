@@ -1,7 +1,7 @@
 #include "Header.h"
 int main() {
-	//encrypt();
-	//decrypt();
+	encrypt();
+	decrypt();
 	sign();
 	_getch();
 
