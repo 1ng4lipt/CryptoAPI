@@ -1,6 +1,7 @@
 #include "Header.h"
 
-int encrypt() {
+int encrypt() 
+{
 
 	HCRYPTPROV	hProv = NULL;
 	LPTSTR      pszName = NULL;
@@ -72,7 +73,7 @@ int encrypt() {
 	// 4. Генерируем сессионный ключ
 
 	HCRYPTKEY hKey;
-	if (!CryptGenKey(hProv, CALG_DES, CRYPT_EXPORTABLE | CRYPT_ENCRYPT, &hKey))
+	if (!CryptGenKey(hProv, CALG_RC2, CRYPT_EXPORTABLE | CRYPT_ENCRYPT, &hKey))
 	{
 		puts("Не удается создать ключ DES\n");
 		return -1;
@@ -84,12 +85,12 @@ int encrypt() {
 
 	// ====== Устанавливаем режим шифрование RC2_OFB согласно Варианту 8 ======
 
-	/*DWORD dwMode = CRYPT_MODE_OFB;
+	DWORD dwMode = CRYPT_MODE_OFB;
 	if (!CryptSetKeyParam(hKey, KP_MODE, (BYTE*)&dwMode, 0))
 	{
 		puts("Error CryptSetKeyParam!\n");
 		return -1;
-	}*/
+	}
 
 
 	// Создадим и откроем для чтения файл с исходным текстом для шифрования

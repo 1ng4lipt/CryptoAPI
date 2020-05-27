@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="decrypt.cpp" />
     <ClCompile Include="encrypt.cpp" />
+    <ClCompile Include="sign.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

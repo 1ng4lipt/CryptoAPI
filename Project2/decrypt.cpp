@@ -1,6 +1,7 @@
 #include "Header.h"
 
-int decrypt() {
+int decrypt() 
+{
 
 	HCRYPTPROV	hProv = NULL;
 	LPTSTR      pszName = NULL;
